@@ -25,14 +25,14 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="max-w-2xl mx-auto mt-16 sm:mt-24 px-4">
+      <div className="max-w-2xl mx-auto mt-12 sm:mt-20 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="mb-4"
         >
-          <span className="px-4 py-1 bg-white rounded-full text-sm sm:text-lg shadow-md">
+          <span className="px-4 py-1 mt-3  bg-white rounded-full text-base sm:text-lg shadow-md">
             Welcome to my portfolio 👋
           </span>
         </motion.div>
@@ -43,13 +43,13 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-4"
         >
-          <h1 className="text-2xl sm:text-5xl font-bold mb-2">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-2">
             I&apos;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               Mehdia Fatima Faizi
             </span>
           </h1>
-          <div className="text-lg sm:text-3xl font-bold text-purple-600">
+          <div className="text-xl sm:text-3xl font-bold text-purple-600">
             <TypeAnimation
               sequence={[
                 "Frontend Developer",
@@ -70,7 +70,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-sm sm:text-lg text-gray-700 leading-snug max-w-lg mx-auto mb-5"
+          className="text-lg sm:text-xl text-gray-700 leading-normal max-w-lg mx-auto mb-5"
         >
           Crafting beautiful and functional web experiences with modern
           technologies. Turning ideas into reality through clean and efficient
@@ -86,17 +86,17 @@ const Hero = () => {
         >
           {[
             {
-              icon: <FaLinkedin className="text-xl sm:text-3xl" />,
+              icon: <FaLinkedin className="text-2xl sm:text-3xl" />,
               href: "https://www.linkedin.com/in/mehdia-f-884506289/",
               label: "LinkedIn",
             },
             {
-              icon: <FaGithub className="text-xl sm:text-3xl" />,
+              icon: <FaGithub className="text-2xl sm:text-3xl" />,
               href: "https://github.com/mehdiafatima",
               label: "GitHub",
             },
             {
-              icon: <MdEmail className="text-xl sm:text-3xl" />,
+              icon: <MdEmail className="text-2xl sm:text-3xl" />,
               href: "mailto:mehefaizi@gmail.com",
               label: "Email",
             },
@@ -110,7 +110,7 @@ const Hero = () => {
               whileHover={{ scale: 1.1, y: -3 }}
             >
               {social.icon}
-              <span className="text-xs sm:text-sm font-medium">
+              <span className="text-sm sm:text-base font-medium">
                 {social.label}
               </span>
             </motion.a>
@@ -127,7 +127,7 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-base bg-purple-600 text-white rounded-full font-medium shadow-lg hover:bg-purple-700 transition-colors"
+            className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg bg-purple-600 text-white rounded-full font-medium shadow-lg hover:bg-purple-700 transition-colors"
             onClick={() =>
               document.getElementById("contact")?.scrollIntoView({
                 behavior: "smooth",
@@ -139,7 +139,7 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-base bg-white text-purple-600 rounded-full font-medium shadow-lg hover:bg-purple-50 transition-colors"
+            className="px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg bg-white text-purple-600 rounded-full font-medium shadow-lg hover:bg-purple-50 transition-colors"
             onClick={() =>
               document.getElementById("project")?.scrollIntoView({
                 behavior: "smooth",
